@@ -10,6 +10,7 @@ import java.util.List;
 public class Votacion implements Serializable {
 
     private String titulo;
+    private String lugar;
     private long fechaInicio;
     private long fechaFin;
     private List<Pregunta> preguntas;
@@ -66,4 +67,14 @@ public class Votacion implements Serializable {
     public void setFechaFin(long fechaFin) {
         this.fechaFin = fechaFin;
     }
+
+    public String getLugar() {
+        return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
+    }
+    
+    
 }
